@@ -18,16 +18,18 @@ if (navigator.serviceWorker) {
 /**
  * This function checks for eligibility.
  */
-window.onload = function() {
+window.onload = function () {
   const params = new URLSearchParams(document.location.search)
-  
+
   // input
-  const age = params.get('a')
+  const age = params.get("a")
   console.log(age)
 
   if (age < 19 || age > 80) {
-    document.getElementById("eligibility").innerHTML = "Age: " + age + "<br>You are: ELIGIBLE!!!!"
+    document.getElementById("eligibility").innerHTML =
+      "Age: " + age + "<br>You are: ELIGIBLE!!!!"
   } else {
-    document.getElementById("eligibility").innerHTML = "Age: " + age + "<br>You are: NOT eligible."
+    document.getElementById("eligibility").innerHTML =
+      "Age: " + age + "<br>You are: NOT eligible."
   }
 }
