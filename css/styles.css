@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: #dec4f8;
 }
 
 p {
@@ -36,4 +36,13 @@ p {
 img {
   float: right;
   margin-right: 15px;
+}
+
+#text {
+  font-size: 130%;
+}
+
+#eligibility {
+  font-size: 130%;
+  color: #0008ff;
 }

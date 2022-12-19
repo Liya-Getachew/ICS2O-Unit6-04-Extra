@@ -7,7 +7,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-Unit6-04-Extra/sw.js", {
@@ -16,8 +16,18 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function checks for eligibility.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+window.onload = function() {
+  const params = new URLSearchParams(document.location.search)
+  
+  // input
+  const age = params.get('a')
+  console.log(age)
+
+  if (age < 19 || age > 80) {
+    document.getElementById("eligibility").innerHTML = "Age: " + age + "<br>You are: ELIGIBLE!!!!"
+  } else {
+    document.getElementById("eligibility").innerHTML = "Age: " + age + "<br>You are: NOT eligible."
+  }
 }

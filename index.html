@@ -31,14 +31,14 @@
     </noscript>
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      href="https://code.getmdl.io/1.3.0/material.deep_purple-light_blue.min.css"
       media="none"
       onload="if(media!='all')media='all'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        href="https://code.getmdl.io/1.3.0/material.deep_purple-light_blue.min.css"
       />
     </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -56,20 +56,17 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+      <p id="text">Discount eligibilty</p>
+      <p id="text">Type your age and the month in the url to find if you're eligible for THE Disney discount.<br>eg. /?a=34</p>
         <img
           src="./images/notebook-animation.svg"
           alt="Computer"
           width="25%"
           height="25%"
         />
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Say "Hello, World!"
-        </button>
-        <div id="hello-world"></div>
+        <div id="result">Eligibilty:
+        <div id="eligibility">You are:</div>
+        </div>
       </main>
     </div>
   </body>
